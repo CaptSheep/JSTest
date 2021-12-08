@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select onchange="do_somthing()" id="test">
+    <option value="1"> 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+</select>
+<script>
+    function do_somthing()
+    {
+        var SelectedValue = document.getElementById("test").value;
+        alert(SelectedValue);
+    }
+</script>
+</body>
+</html>
