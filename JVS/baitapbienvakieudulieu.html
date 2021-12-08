@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1: Nhap diem cua 1 sinh vien-->
+<script>
+    // Khai bao bien
+    var Diemvatly
+    var Diemhoahoc
+    var DiemSinhhoc
+    Diemvatly = prompt("Nhap diem vat ly");
+    Diemhoahoc = prompt("Nhap diem hoa hoc");
+    DiemSinhhoc = prompt("Nhap diem sinh hoc");
+    // Doi gia tri
+    Diemvatly = parseInt(Diemvatly);
+    Diemhoahoc = parseInt(Diemhoahoc);
+    DiemSinhhoc = parseInt(DiemSinhhoc);
+    // Tinh toan va in gia tri
+    document.write('Diem Vat ly la :' + Diemvatly);
+    document.write("<br/>");
+    document.write("Diem Hoa hoc la :" + Diemhoahoc);
+    document.write('<br/>');
+    document.write("Diem Sinh hoc la :" + DiemSinhhoc);
+    Tongdiem = (Diemvatly + Diemhoahoc + DiemSinhhoc);
+    document.write('<br/>');
+    document.write("Tong diem la " + Tongdiem);
+    DiemTB = (Diemvatly + Diemhoahoc + DiemSinhhoc)/3
+    document.write('<br/>');
+    document.write('Diem TB la :' + DiemTB);
+
+    // Bai 2 : Viet phuong trinh doi do C sang F
+    var C;
+    C = prompt("Nhap do C");
+    C = parseInt(C);
+    T = [C * 1.8 + 32];
+    document.write("Do F la : " + T);
+
+    // Phuong trinh doi tu do F sang C
+    var F;
+    F = prompt("Nhap do F");
+    F = parseInt(F);
+    P = ( F - 32) / 1.8;
+    document.write('Do C la : ' + P);
+
+    // Bai 3: Viet phuong trinh tinh dien tich hinh tron
+
+    const Pi = 3.14;
+    var Bankinh = prompt("Nhap ban kinh cua duong tron");
+    Bankinh = parseInt(Bankinh);
+    value = Math.pow(Bankinh, 2);
+    S = value * Pi;
+    document.write("Dien tich hinh tron la : " +S);
+
+    // Bai 4 : Viet phuong trinh tinh chu vi hinh tron
+
+    const Pi = 3.14;
+    Duongkinh = prompt("Nhap duong kinh cua duong tron");
+    Duongkinh = parseInt(Duongkinh);
+    C = Duongkinh * Pi;
+    document.write("Chu vi hinh tron la : " + C);
+</script>
+</body>
+</html>
